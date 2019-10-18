@@ -1,0 +1,327 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EF35EFDD-BAF0-44F3-8820-DF3F922F5CCD}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>qlsv_nhom2</RootNamespace>
+    <AssemblyName>qlsv_nhom2</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Information\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Information\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Information\Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Information\Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Information\Form3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Information\Form3.Designer.cs">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Search\search_cs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Search\search_cs.Designer.cs">
+      <DependentUpon>search_cs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Search\search_khoa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Search\search_khoa.Designer.cs">
+      <DependentUpon>search_khoa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Search\search_lop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Search\search_lop.Designer.cs">
+      <DependentUpon>search_lop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Search\search_mh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Search\search_mh.Designer.cs">
+      <DependentUpon>search_mh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Search\search_sv.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Search\search_sv.Designer.cs">
+      <DependentUpon>search_sv.cs</DependentUpon>
+    </Compile>
+    <Compile Include="System\frmain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="System\frmain.Designer.cs">
+      <DependentUpon>frmain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login\frmdk.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login\frmdk.Designer.cs">
+      <DependentUpon>frmdk.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login\frmdn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login\frmdn.Designer.cs">
+      <DependentUpon>frmdn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Information\frm_CS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Information\frm_CS.Designer.cs">
+      <DependentUpon>frm_CS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Information\frm_diem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Information\frm_diem.Designer.cs">
+      <DependentUpon>frm_diem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Information\frm_monhoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Information\frm_monhoc.Designer.cs">
+      <DependentUpon>frm_monhoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Information\f_gv.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Information\f_gv.Designer.cs">
+      <DependentUpon>f_gv.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Information\f_khoa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Information\f_khoa.Designer.cs">
+      <DependentUpon>f_khoa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Information\f_lop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Information\f_lop.Designer.cs">
+      <DependentUpon>f_lop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Information\f_resetpass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Information\f_resetpass.Designer.cs">
+      <DependentUpon>f_resetpass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ketnoi.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Management Account\ql_ad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Management Account\ql_ad.Designer.cs">
+      <DependentUpon>ql_ad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Management Account\ql_gv.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Management Account\ql_gv.Designer.cs">
+      <DependentUpon>ql_gv.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Information\f_sv.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Information\f_sv.Designer.cs">
+      <DependentUpon>f_sv.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Management Account\ql_tk.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Management Account\ql_tk.Designer.cs">
+      <DependentUpon>ql_tk.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Management Account\ql_user.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Management Account\ql_user.Designer.cs">
+      <DependentUpon>ql_user.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Search\search_gv.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Search\search_gv.Designer.cs">
+      <DependentUpon>search_gv.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Information\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Information\Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Information\Form3.resx">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Search\search_cs.resx">
+      <DependentUpon>search_cs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Search\search_khoa.resx">
+      <DependentUpon>search_khoa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Search\search_lop.resx">
+      <DependentUpon>search_lop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Search\search_mh.resx">
+      <DependentUpon>search_mh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Search\search_sv.resx">
+      <DependentUpon>search_sv.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="System\frmain.resx">
+      <DependentUpon>frmain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login\frmdk.resx">
+      <DependentUpon>frmdk.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login\frmdn.resx">
+      <DependentUpon>frmdn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Information\frm_CS.resx">
+      <DependentUpon>frm_CS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Information\frm_diem.resx">
+      <DependentUpon>frm_diem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Information\frm_monhoc.resx">
+      <DependentUpon>frm_monhoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Information\f_gv.resx">
+      <DependentUpon>f_gv.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Information\f_khoa.resx">
+      <DependentUpon>f_khoa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Information\f_lop.resx">
+      <DependentUpon>f_lop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Information\f_resetpass.resx">
+      <DependentUpon>f_resetpass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Management Account\ql_ad.resx">
+      <DependentUpon>ql_ad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Management Account\ql_gv.resx">
+      <DependentUpon>ql_gv.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Information\f_sv.resx">
+      <DependentUpon>f_sv.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Management Account\ql_tk.resx">
+      <DependentUpon>ql_tk.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Management Account\ql_user.resx">
+      <DependentUpon>ql_user.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Search\search_gv.resx">
+      <DependentUpon>search_gv.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\38f84c3b6b47b2ba_d515fbc324147dfa_8419415222213204143215.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8cuonebook.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7947.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user-icon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hungup.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\About.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Calculator.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Exit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit1.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
