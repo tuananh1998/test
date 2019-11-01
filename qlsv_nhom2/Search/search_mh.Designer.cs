@@ -28,6 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dgvad = new System.Windows.Forms.DataGridView();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
@@ -48,6 +50,8 @@
             // 
             // dgvad
             // 
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.Silver;
+            this.dgvad.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle3;
             this.dgvad.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvad.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dgvad.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
@@ -55,6 +59,8 @@
             this.dgvad.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvad.Location = new System.Drawing.Point(3, 16);
             this.dgvad.Name = "dgvad";
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.Silver;
+            this.dgvad.RowsDefaultCellStyle = dataGridViewCellStyle4;
             this.dgvad.Size = new System.Drawing.Size(639, 331);
             this.dgvad.TabIndex = 0;
             // 
@@ -188,6 +194,7 @@
             this.Controls.Add(this.groupBox1);
             this.Name = "search_mh";
             this.Text = "Tìm Kiếm Theo Môn Học";
+            this.Load += new System.EventHandler(this.search_mh_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvad)).EndInit();
             this.groupBox3.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);

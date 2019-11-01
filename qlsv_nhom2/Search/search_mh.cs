@@ -19,6 +19,12 @@ namespace qlsv_nhom2.Search
         }
         public void load()
         {
+            btnfind.ImageAlign = ContentAlignment.MiddleLeft;
+            btnRs.ImageAlign = ContentAlignment.MiddleLeft;
+            btnClose.ImageAlign = ContentAlignment.MiddleLeft;
+            btnfind.Image = Bitmap.FromFile(@"C:\Users\tuan anh\Desktop\LT_NET\Photo for Design Form\Photo for Design Form\Find.png");
+            btnRs.Image = Bitmap.FromFile(@"C:\Users\tuan anh\Desktop\LT_NET\Photo for Design Form\Photo for Design Form\Load.png");
+            btnClose.Image = Bitmap.FromFile(@"C:\Users\tuan anh\Desktop\LT_NET\Photo for Design Form\Photo for Design Form\PNG\yellow\18\close.png");
 
             try
             {
@@ -88,7 +94,7 @@ namespace qlsv_nhom2.Search
                         else if (key == 2)
                         {
                             int sot = Convert.ToInt32(txbAcc.Text.Trim());
-                            string sql1 = "select * from monhoc where sotiet like '%" + sot + "%s'";
+                            string sql1 = "select * from monhoc where sotiet like '%" + sot + "%'";
                             dgvad.DataSource = truyxuat.laybang(sql1);
                             txbAcc.Text = "";
                             txbAcc.Focus();
@@ -109,6 +115,11 @@ namespace qlsv_nhom2.Search
                     }
                 }
             }
+
+        }
+
+        private void search_mh_Load(object sender, EventArgs e)
+        {
 
         }
     }

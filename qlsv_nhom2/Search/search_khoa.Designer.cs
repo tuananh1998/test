@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dgvad = new System.Windows.Forms.DataGridView();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
@@ -48,6 +49,8 @@
             // 
             // dgvad
             // 
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.Silver;
+            this.dgvad.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvad.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvad.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dgvad.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;

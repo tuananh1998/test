@@ -33,8 +33,15 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -46,22 +53,183 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Information\Form1.cs">
+    <Compile Include="Dataset\Data_cs.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Data_cs.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Dataset\Data_Diem.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Data_Diem.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Dataset\Data_gv.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Data_gv.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Dataset\Data_khoa.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Data_khoa.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Dataset\Data_lop.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Data_lop.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Dataset\Data_mh.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Data_mh.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Dataset\Data_sv.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Data_sv.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Information\infor_cs.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Information\Form1.Designer.cs">
+    <Compile Include="Information\infor_cs.Designer.cs">
+      <DependentUpon>infor_cs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Information\infor_Diem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Information\infor_Diem.Designer.cs">
+      <DependentUpon>infor_Diem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Information\infor_gv.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Information\infor_gv.Designer.cs">
+      <DependentUpon>infor_gv.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Information\infor_khoa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Information\infor_khoa.Designer.cs">
+      <DependentUpon>infor_khoa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Information\infor_lop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Information\infor_lop.Designer.cs">
+      <DependentUpon>infor_lop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Information\infor_monh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Information\infor_monh.Designer.cs">
+      <DependentUpon>infor_monh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Information\infor_sv.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Information\infor_sv.Designer.cs">
+      <DependentUpon>infor_sv.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Information\Print\Cs\in_cs.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>in_cs.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Information\Print\Cs\p_cs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Information\Print\Cs\p_cs.Designer.cs">
+      <DependentUpon>p_cs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Information\Print\Diem\in_Diem.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>in_Diem.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Information\Print\Diem\p_Diem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Information\Print\Diem\p_Diem.Designer.cs">
+      <DependentUpon>p_Diem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Information\Print\Gv\in_gv.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>in_gv.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Information\Print\Gv\p_gv.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Information\Print\Gv\p_gv.Designer.cs">
+      <DependentUpon>p_gv.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Information\Print\Khoa\in_khoa.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>in_khoa.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Information\Print\Khoa\p_khoa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Information\Print\Khoa\p_khoa.Designer.cs">
+      <DependentUpon>p_khoa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Information\Print\Lop\in_lop.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>in_lop.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Information\Print\Lop\p_lop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Information\Print\Lop\p_lop.Designer.cs">
+      <DependentUpon>p_lop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Information\Print\MonHoc\in_mh.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>in_mh.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Information\Print\MonHoc\p_mh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Information\Print\MonHoc\p_mh.Designer.cs">
+      <DependentUpon>p_mh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Information\Print\Sv\in_sv.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>in_sv.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Information\Print\Sv\p_sv.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Information\Print\Sv\p_sv.Designer.cs">
+      <DependentUpon>p_sv.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Management\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Management\Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Information\Form2.cs">
+    <Compile Include="Management\Form2.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Information\Form2.Designer.cs">
+    <Compile Include="Management\Form2.Designer.cs">
       <DependentUpon>Form2.cs</DependentUpon>
     </Compile>
-    <Compile Include="Information\Form3.cs">
+    <Compile Include="Management\Form3.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Information\Form3.Designer.cs">
+    <Compile Include="Management\Form3.Designer.cs">
       <DependentUpon>Form3.cs</DependentUpon>
     </Compile>
     <Compile Include="Search\search_cs.cs">
@@ -94,10 +262,10 @@
     <Compile Include="Search\search_sv.Designer.cs">
       <DependentUpon>search_sv.cs</DependentUpon>
     </Compile>
-    <Compile Include="System\frmain.cs">
+    <Compile Include="Sys\frmain.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="System\frmain.Designer.cs">
+    <Compile Include="Sys\frmain.Designer.cs">
       <DependentUpon>frmain.cs</DependentUpon>
     </Compile>
     <Compile Include="Login\frmdk.cs">
@@ -112,46 +280,46 @@
     <Compile Include="Login\frmdn.Designer.cs">
       <DependentUpon>frmdn.cs</DependentUpon>
     </Compile>
-    <Compile Include="Information\frm_CS.cs">
+    <Compile Include="Management\frm_CS.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Information\frm_CS.Designer.cs">
+    <Compile Include="Management\frm_CS.Designer.cs">
       <DependentUpon>frm_CS.cs</DependentUpon>
     </Compile>
-    <Compile Include="Information\frm_diem.cs">
+    <Compile Include="Management\frm_diem.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Information\frm_diem.Designer.cs">
+    <Compile Include="Management\frm_diem.Designer.cs">
       <DependentUpon>frm_diem.cs</DependentUpon>
     </Compile>
-    <Compile Include="Information\frm_monhoc.cs">
+    <Compile Include="Management\frm_monhoc.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Information\frm_monhoc.Designer.cs">
+    <Compile Include="Management\frm_monhoc.Designer.cs">
       <DependentUpon>frm_monhoc.cs</DependentUpon>
     </Compile>
-    <Compile Include="Information\f_gv.cs">
+    <Compile Include="Management\f_gv.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Information\f_gv.Designer.cs">
+    <Compile Include="Management\f_gv.Designer.cs">
       <DependentUpon>f_gv.cs</DependentUpon>
     </Compile>
-    <Compile Include="Information\f_khoa.cs">
+    <Compile Include="Management\f_khoa.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Information\f_khoa.Designer.cs">
+    <Compile Include="Management\f_khoa.Designer.cs">
       <DependentUpon>f_khoa.cs</DependentUpon>
     </Compile>
-    <Compile Include="Information\f_lop.cs">
+    <Compile Include="Management\f_lop.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Information\f_lop.Designer.cs">
+    <Compile Include="Management\f_lop.Designer.cs">
       <DependentUpon>f_lop.cs</DependentUpon>
     </Compile>
-    <Compile Include="Information\f_resetpass.cs">
+    <Compile Include="Management\f_resetpass.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Information\f_resetpass.Designer.cs">
+    <Compile Include="Management\f_resetpass.Designer.cs">
       <DependentUpon>f_resetpass.cs</DependentUpon>
     </Compile>
     <Compile Include="ketnoi.cs" />
@@ -169,10 +337,10 @@
     <Compile Include="Management Account\ql_gv.Designer.cs">
       <DependentUpon>ql_gv.cs</DependentUpon>
     </Compile>
-    <Compile Include="Information\f_sv.cs">
+    <Compile Include="Management\f_sv.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Information\f_sv.Designer.cs">
+    <Compile Include="Management\f_sv.Designer.cs">
       <DependentUpon>f_sv.cs</DependentUpon>
     </Compile>
     <Compile Include="Management Account\ql_tk.cs">
@@ -193,13 +361,83 @@
     <Compile Include="Search\search_gv.Designer.cs">
       <DependentUpon>search_gv.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Information\Form1.resx">
+    <EmbeddedResource Include="Information\infor_cs.resx">
+      <DependentUpon>infor_cs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Information\infor_Diem.resx">
+      <DependentUpon>infor_Diem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Information\infor_gv.resx">
+      <DependentUpon>infor_gv.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Information\infor_khoa.resx">
+      <DependentUpon>infor_khoa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Information\infor_lop.resx">
+      <DependentUpon>infor_lop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Information\infor_monh.resx">
+      <DependentUpon>infor_monh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Information\infor_sv.resx">
+      <DependentUpon>infor_sv.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Information\Print\Cs\in_cs.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>in_cs.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Information\Print\Cs\p_cs.resx">
+      <DependentUpon>p_cs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Information\Print\Diem\in_Diem.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>in_Diem.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Information\Print\Diem\p_Diem.resx">
+      <DependentUpon>p_Diem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Information\Print\Gv\in_gv.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>in_gv.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Information\Print\Gv\p_gv.resx">
+      <DependentUpon>p_gv.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Information\Print\Khoa\in_khoa.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>in_khoa.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Information\Print\Khoa\p_khoa.resx">
+      <DependentUpon>p_khoa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Information\Print\Lop\in_lop.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>in_lop.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Information\Print\Lop\p_lop.resx">
+      <DependentUpon>p_lop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Information\Print\MonHoc\in_mh.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>in_mh.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Information\Print\MonHoc\p_mh.resx">
+      <DependentUpon>p_mh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Information\Print\Sv\in_sv.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>in_sv.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Information\Print\Sv\p_sv.resx">
+      <DependentUpon>p_sv.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Management\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Information\Form2.resx">
+    <EmbeddedResource Include="Management\Form2.resx">
       <DependentUpon>Form2.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Information\Form3.resx">
+    <EmbeddedResource Include="Management\Form3.resx">
       <DependentUpon>Form3.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Search\search_cs.resx">
@@ -217,7 +455,7 @@
     <EmbeddedResource Include="Search\search_sv.resx">
       <DependentUpon>search_sv.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="System\frmain.resx">
+    <EmbeddedResource Include="Sys\frmain.resx">
       <DependentUpon>frmain.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login\frmdk.resx">
@@ -226,25 +464,25 @@
     <EmbeddedResource Include="Login\frmdn.resx">
       <DependentUpon>frmdn.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Information\frm_CS.resx">
+    <EmbeddedResource Include="Management\frm_CS.resx">
       <DependentUpon>frm_CS.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Information\frm_diem.resx">
+    <EmbeddedResource Include="Management\frm_diem.resx">
       <DependentUpon>frm_diem.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Information\frm_monhoc.resx">
+    <EmbeddedResource Include="Management\frm_monhoc.resx">
       <DependentUpon>frm_monhoc.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Information\f_gv.resx">
+    <EmbeddedResource Include="Management\f_gv.resx">
       <DependentUpon>f_gv.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Information\f_khoa.resx">
+    <EmbeddedResource Include="Management\f_khoa.resx">
       <DependentUpon>f_khoa.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Information\f_lop.resx">
+    <EmbeddedResource Include="Management\f_lop.resx">
       <DependentUpon>f_lop.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Information\f_resetpass.resx">
+    <EmbeddedResource Include="Management\f_resetpass.resx">
       <DependentUpon>f_resetpass.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -257,7 +495,7 @@
     <EmbeddedResource Include="Management Account\ql_gv.resx">
       <DependentUpon>ql_gv.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Information\f_sv.resx">
+    <EmbeddedResource Include="Management\f_sv.resx">
       <DependentUpon>f_sv.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Management Account\ql_tk.resx">
@@ -269,6 +507,83 @@
     <EmbeddedResource Include="Search\search_gv.resx">
       <DependentUpon>search_gv.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="Dataset\Data_cs.xsc">
+      <DependentUpon>Data_cs.xsd</DependentUpon>
+    </None>
+    <None Include="Dataset\Data_cs.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Data_cs.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Dataset\Data_cs.xss">
+      <DependentUpon>Data_cs.xsd</DependentUpon>
+    </None>
+    <None Include="Dataset\Data_Diem.xsc">
+      <DependentUpon>Data_Diem.xsd</DependentUpon>
+    </None>
+    <None Include="Dataset\Data_Diem.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Data_Diem.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Dataset\Data_Diem.xss">
+      <DependentUpon>Data_Diem.xsd</DependentUpon>
+    </None>
+    <None Include="Dataset\Data_gv.xsc">
+      <DependentUpon>Data_gv.xsd</DependentUpon>
+    </None>
+    <None Include="Dataset\Data_gv.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Data_gv.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Dataset\Data_gv.xss">
+      <DependentUpon>Data_gv.xsd</DependentUpon>
+    </None>
+    <None Include="Dataset\Data_khoa.xsc">
+      <DependentUpon>Data_khoa.xsd</DependentUpon>
+    </None>
+    <None Include="Dataset\Data_khoa.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Data_khoa.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Dataset\Data_khoa.xss">
+      <DependentUpon>Data_khoa.xsd</DependentUpon>
+    </None>
+    <None Include="Dataset\Data_lop.xsc">
+      <DependentUpon>Data_lop.xsd</DependentUpon>
+    </None>
+    <None Include="Dataset\Data_lop.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Data_lop.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Dataset\Data_lop.xss">
+      <DependentUpon>Data_lop.xsd</DependentUpon>
+    </None>
+    <None Include="Dataset\Data_mh.xsc">
+      <DependentUpon>Data_mh.xsd</DependentUpon>
+    </None>
+    <None Include="Dataset\Data_mh.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Data_mh.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Dataset\Data_mh.xss">
+      <DependentUpon>Data_mh.xsd</DependentUpon>
+    </None>
+    <None Include="Dataset\Data_sv.xsc">
+      <DependentUpon>Data_sv.xsd</DependentUpon>
+    </None>
+    <None Include="Dataset\Data_sv.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Data_sv.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Dataset\Data_sv.xss">
+      <DependentUpon>Data_sv.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -314,6 +629,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\exit1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -28,6 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dgvad = new System.Windows.Forms.DataGridView();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
@@ -48,6 +50,8 @@
             // 
             // dgvad
             // 
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.Silver;
+            this.dgvad.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvad.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvad.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dgvad.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
@@ -55,6 +59,8 @@
             this.dgvad.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvad.Location = new System.Drawing.Point(3, 16);
             this.dgvad.Name = "dgvad";
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.Transparent;
+            this.dgvad.RowsDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvad.Size = new System.Drawing.Size(631, 331);
             this.dgvad.TabIndex = 0;
             // 
@@ -114,33 +120,36 @@
             // 
             this.btnClose.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnClose.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClose.Location = new System.Drawing.Point(307, 200);
+            this.btnClose.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnClose.Location = new System.Drawing.Point(298, 200);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(84, 35);
             this.btnClose.TabIndex = 4;
-            this.btnClose.Text = "Đóng";
+            this.btnClose.Text = "&Đóng";
             this.btnClose.UseVisualStyleBackColor = true;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // btnRs
             // 
             this.btnRs.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRs.Location = new System.Drawing.Point(203, 200);
+            this.btnRs.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnRs.Location = new System.Drawing.Point(185, 200);
             this.btnRs.Name = "btnRs";
-            this.btnRs.Size = new System.Drawing.Size(84, 35);
+            this.btnRs.Size = new System.Drawing.Size(98, 35);
             this.btnRs.TabIndex = 3;
-            this.btnRs.Text = "Hiển Thị";
+            this.btnRs.Text = "&Hiển Thị";
             this.btnRs.UseVisualStyleBackColor = true;
             this.btnRs.Click += new System.EventHandler(this.btnRs_Click);
             // 
             // btnfind
             // 
             this.btnfind.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnfind.Location = new System.Drawing.Point(95, 200);
+            this.btnfind.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnfind.Location = new System.Drawing.Point(86, 200);
             this.btnfind.Name = "btnfind";
             this.btnfind.Size = new System.Drawing.Size(84, 35);
             this.btnfind.TabIndex = 2;
-            this.btnfind.Text = "Tìm";
+            this.btnfind.Text = "&Tìm";
             this.btnfind.UseVisualStyleBackColor = true;
             this.btnfind.Click += new System.EventHandler(this.btnfind_Click);
             // 

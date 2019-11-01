@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label1 = new System.Windows.Forms.Label();
             this.dgvad = new System.Windows.Forms.DataGridView();
@@ -68,6 +69,8 @@
             // 
             // dgvad
             // 
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.Silver;
+            this.dgvad.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvad.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvad.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dgvad.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
@@ -188,6 +191,7 @@
             this.Name = "search_lop";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Tìm Kiếm Lớp";
+            this.Load += new System.EventHandler(this.search_lop_Load);
             this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvad)).EndInit();
             this.groupBox3.ResumeLayout(false);

@@ -24,6 +24,12 @@ namespace qlsv_nhom2.Search
         }
         public void load()
         {
+            btnfind.ImageAlign = ContentAlignment.MiddleLeft;
+            btnRs.ImageAlign = ContentAlignment.MiddleLeft;
+            btnClose.ImageAlign = ContentAlignment.MiddleLeft;
+            btnfind.Image = Bitmap.FromFile(@"C:\Users\tuan anh\Desktop\LT_NET\Photo for Design Form\Photo for Design Form\Find.png");
+            btnRs.Image = Bitmap.FromFile(@"C:\Users\tuan anh\Desktop\LT_NET\Photo for Design Form\Photo for Design Form\Load.png");
+            btnClose.Image = Bitmap.FromFile(@"C:\Users\tuan anh\Desktop\LT_NET\Photo for Design Form\Photo for Design Form\PNG\yellow\18\close.png");
 
             try
             {
